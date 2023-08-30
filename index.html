@@ -1,148 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NIVETH J UNNITHAN - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <!---custom css link---->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
   </head>
   <body>
-    <header class="header">
-      <h1 class="header-title">NIVETH J UNNITHAN</h1>
-      <p class="header-subtitle">Skilled UI Developer</p>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certificates">Certificates</a></li>
-          <li><a href="#education">Education</a></li>
-        </ul>
-      </nav>
+    <!------Header Section------>
+    <header>
+      <a href="#" class="logo">Devlo<span>pe</span>r..</a>
+      <ul class="navlist">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
-    <section id="profile" class="section">
-      <h2 class="section-title">Profile</h2>
-      <p class="section-content">
-        Skilled UI developer with 2 years of experience in React.js development,
-        equipped with a strong background in Computer Science Engineering,
-        proficient in designing and developing visually appealing and intuitive
-        web applications using React.js and SCSS. Possesses an in-depth
-        understanding of the software design and development toolset, seeking a
-        role in designing, developing, and testing user-centric applications.
-      </p>
+    <!---------Home Section--------------->
+    <section class="home" id="home">
+      <div class="home-text">
+        <div class="slide">
+          <span class="one">Hello</span>
+          <span class="two">I'm</span>
+        </div>
+        <h1>Niveth J Unnithan</h1>
+        <h3>FullStack <span>Developer.</span></h3>
+        <p>
+          Skilled Fullstack developer with 2 years of experience in React.js and
+          springboot development<br />
+          equipped with a strong background in Computer Science Engineering.
+        </p>
+        <div class="button">
+          <a
+            class="btn"
+            href="https://raw.githubusercontent.com/nivethjunnithan/nivethjunnithan.github.io/main/docs/NIVETH_J%20UNNITHAN_Resume_13-06-2023-21-18-54.pdf"
+            download
+          >
+            Download Resume</a
+          >
+        </div>
+      </div>
     </section>
 
-    <section id="summary" class="section">
-      <h2 class="section-title">Profile Summary</h2>
-      <p class="section-content">
-        Proficient in front-end development using React.js and CSS, with a basic
-        understanding of Spring Boot. Skilled in creating responsive and
-        user-friendly web applications, ensuring a seamless user experience.
-        Strong understanding of modern web development principles and best
-        practices. Excellent problem-solving skills, capable of identifying and
-        resolving issues in the front-end code efficiently. Detail-oriented with
-        a keen eye for design and aesthetics, ensuring visually appealing and
-        intuitive user interfaces. Effective communicator and team player, adept
-        at collaborating with cross-functional teams to deliver high-quality
-        front-end solutions.
-      </p>
-    </section>
-    <section id="experience" class="section">
-      <h2 class="section-title">Professional Experience</h2>
-      <p class="section-content">
-        <strong>Software Engineer</strong><br />
-        Tata Consultancy Services, Kochi, Kerala, India | July 2021 - Current<br />
-        <strong>Current Client:</strong> US Bank, USA
-      </p>
-      <ul class="section-list">
-        <li>
-          Contributed to the modernization project of the US Bank SinglePoint
-          application, focusing on front-end development using React.js.
-        </li>
-        <li>
-          Worked in a team environment to decouple functionalities from
-          SinglePoint into microservices, ensuring better scalability and
-          maintainability.
-        </li>
-        <li>
-          Collaborated with back-end developers to integrate front-end
-          components with APIs developed using Spring Boot.
-        </li>
-        <li>
-          Developed and implemented front-end features and UI enhancements,
-          adhering to project requirements and design guidelines.
-        </li>
-        <li>
-          Conducted thorough testing and debugging of the front-end code using
-          Jest, ensuring high code quality and robustness.
-        </li>
-        <li>
-          Actively participated in agile development processes, including daily
-          stand-up meetings and sprint planning sessions.
-        </li>
-        <li>
-          Actively worked with a comprehensive software design and development
-          toolset, including Eclipse, Postman, Enterprise Jenkins, SonarQube,
-          SquirrelSQL, Jira, and Git, to design, develop, and test user-centric
-          applications.
-        </li>
-      </ul>
+    <!---------about Section --------------->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/about.jpg" />
+      </div>
+
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>FullStack Developer!</h4>
+        <p>
+          Hello there! I'm Niveth, a skilled full-stack developer specializing
+          in React.js, CSS, and Spring Boot. My focus is on crafting responsive
+          and user-friendly web applications that provide a smooth and enjoyable
+          experience for users. With a robust understanding of modern web
+          development principles and best practices across the full stack, I'm
+          adept at efficiently resolving issues. My attention to detail and
+          design aesthetics ensures that I create visually appealing and
+          intuitive user interfaces. Thank you for taking the time to explore my
+          profile. Let's create something remarkable together!
+        </p>
+        <a href="#" class="btn">More About</a>
+      </div>
     </section>
 
-    <section id="skills" class="section">
-      <h2 class="section-title">Skill Set</h2>
-      <ul class="section-list">
-        <li>React.js</li>
-        <li>CSS</li>
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>Spring Boot</li>
-        <li>SQL</li>
-      </ul>
+    <!-----------Services Section-------------->
+
+    <!-----------Portfolio Section--------------->
+    <section class="portfolio" id="portfolio">
+      <div class="main-text">
+        <h2><span>Latest </span>Projects</h2>
+      </div>
+      <div class="portfolio-content">
+        <div class="row">
+          <img src="img/project1.jpg" />
+          <div class="layer">
+            <h5>US Bank Modernization</h5>
+            <p>
+              Contributed to the modernization project of the US Bank
+              SinglePoint application, using React.js, scss and springboot.
+            </p>
+            <a href="https://www.usbank.com/index.html">
+              <i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="img/project2.jpg" />
+          <div class="layer">
+            <h5>Image Classifier WebApp</h5>
+            <p>
+              An image processing model using neural networks which detects
+              diseases of plant leaves.
+            </p>
+            <a
+              href="https://github.com/nivethjunnithan/image-classifier-webapp-flask.git"
+            >
+              <i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="img/project3.jpg" />
+          <div class="layer">
+            <h5>ClassApp</h5>
+            <p>
+              An app designed to provide attendence, Series Mark, Time Table and
+              Assignments to students which can be easily updated by admin.
+            </p>
+            <a href="https://github.com/nivethjunnithan/ClassApp.git">
+              <i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="img/project4.jpg" />
+          <div class="layer">
+            <h5>Flutter Flask Login</h5>
+            <p>
+              Flutter app integrated with Flask server with login and
+              registration functionalities.
+            </p>
+            <a
+              href="https://github.com/nivethjunnithan/Flutter-flask-login.git"
+            >
+              <i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="row">
+          <img src="img/project5.jpg" />
+          <div class="layer">
+            <h5>Android Kernel Development</h5>
+            <p>
+              Worked on the porting of Linux kernel 3.x.y versions for
+              snapdragon device with processor version 625.
+            </p>
+            <a
+              href="https://github.com/nivethjunnithan/android_kernel_xiaomi_msm8953.git"
+            >
+              <i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="certificates" class="section">
-      <h2 class="section-title">Certificates</h2>
-      <ul class="section-list">
-        <li>
-          <strong>Python for Everybody Specialization:</strong> An online
-          non-credit specialization course conducted by the University of
-          Michigan.
-        </li>
-        <li>
-          <strong>Basic Python:</strong> An online skill certification course
-          conducted by HackerRank.
-        </li>
-        <li>
-          <strong>Google DevFest India:</strong> Certificate of participation in
-          DevFest India organized by Google Developer Group Communities.
-        </li>
-      </ul>
+    <!------------------Contact section------------>
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact <span>Me!</span></h2>
+        <h4>If you have any project in your mind.</h4>
+        <p>
+          I'm a FullStack Developer - working on web development using React.js,
+          css and springboot.
+        </p>
+        <div class="list">
+          <li><a href="#">7561058937</a></li>
+          <li><a href="#">nivethunnithan@gmail.com</a></li>
+          <li><a href="#">Like Share & Subscribe</a></li>
+        </div>
+
+        <div class="contact-icons">
+          <a href="https://github.com/nivethjunnithan/"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/nivethjunnithan/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="name" placeholder="Your Name " required />
+          <input type="email" placeholder="Your Email " required />
+          <input type="number" placeholder="your Mobile Number" required />
+          <textarea
+            name=""
+            id=""
+            cols="35"
+            rows="10"
+            placeholder="How Can I Help You "
+            required
+          ></textarea>
+          <input type="submit" value="Send Message" class="submit" required />
+        </form>
+      </div>
     </section>
 
-    <section id="education" class="section">
-      <h2 class="section-title">Education</h2>
-      <ul class="section-list">
-        <li>
-          <strong>BTech. Computer Science Engineering</strong><br />Government
-          Engineering College Idukki | 08/2017 – 12/2021<br />CGPA: 7.49
-        </li>
-        <li>
-          <strong>Higher Secondary Education</strong><br />Vijayagiri Public
-          School, Ashtamichira | 06/2015 – 04/2017<br />Marks: 86%
-        </li>
-        <li>
-          <strong>High School</strong><br />Bishop Moore Vidyapith Mavelikara |
-          06/2003 – 03/2015<br />Marks: 88%
-        </li>
-      </ul>
+    <!---------End Section---------->
+    <section class="end">
+      <div class="last-text">
+        <p>Designed by Myself</p>
+      </div>
+      <div class="top">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
     </section>
-
-    <footer class="footer">
-      <p class="footer-contact">
-        Contact: nivethunnithan@gmail.com | Phone: 7561058937
-      </p>
-    </footer>
   </body>
 </html>
