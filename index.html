@@ -1,37 +1,106 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <!---custom css link---->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3a3a52);
+            color: #fff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .navlist {
+            list-style: none;
+            display: flex;
+        }
+        .navlist li {
+            margin: 0 15px;
+        }
+        .navlist a {
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .navlist a:hover {
+            color: #00e6e6;
+        }
+        .home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .home-text h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .home-text p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #00e6e6;
+            color: #fff;
+            border-radius: 8px;
+            margin-top: 15px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #009999;
+        }
+    </style>
+</head>
+<body>
     <!------Header Section------>
     <header>
       <a href="#" class="logo">Develo<span>pe</span>r..</a>
-      <ul class="navlist">
+        <ul class="navlist">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
       <div class="bx bx-menu" id="menu-icon"></div>
     </header>
-
+    
     <!---------Home Section--------------->
     <section class="home" id="home">
-      <div class="home-text">
+        <div class="home-text">
         <div class="slide">
           <span class="one">Hello</span>
           <span class="two">I'm</span>
         </div>
-        <h1>Niveth J Unnithan</h1>
+            <h1>Niveth J Unnithan</h1>
         <h3>FullStack <span>Developer.</span></h3>
         <p>
           Skilled Fullstack developer with 3 years of experience in React.js and
@@ -47,9 +116,9 @@
             Download Resume</a
           >
         </div>
-      </div>
+        </div>
     </section>
-
+    
     <!---------about Section --------------->
     <section class="about" id="about">
       <div class="about-img">
@@ -71,9 +140,9 @@
           profile. Let's create something remarkable together!
         </p>
         <a href="#" class="btn">More About</a>
-      </div>
+        </div>
     </section>
-
+    
     <!-----------Services Section-------------->
 
     <!-----------Portfolio Section--------------->
@@ -157,9 +226,9 @@
             ></a>
           </div>
         </div>
-      </div>
+        </div>
     </section>
-
+    
     <!------------------Contact section------------>
     <section class="contact" id="contact">
       <div class="contact-text">
@@ -199,17 +268,17 @@
           ></textarea>
           <input type="submit" value="Send Message" class="submit" required />
         </form>
-      </div>
+        </div>
     </section>
-
+    
     <!---------End Section---------->
     <section class="end">
-      <div class="last-text">
-        <p>Designed by Myself</p>
-      </div>
-      <div class="top">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-      </div>
+        <div class="last-text">
+            <p>Designed by Myself</p>
+        </div>
+        <div class="top">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
     </section>
-  </body>
+</body>
 </html>
