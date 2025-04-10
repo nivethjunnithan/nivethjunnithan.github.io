@@ -2,7 +2,7 @@
 
 ## Profile
 
-Skilled Fullstack developer with 2 years of experience in React.js and springboot development, equipped with a strong background in Computer Science Engineering, proficient in designing and developing visually appealing and intuitive web applications using React.js and SCSS. Possesses an in-depth understanding of the software design and development toolset, seeking a role in designing, developing, and testing user-centric applications.
+Skilled Fullstack developer with 4 years of experience in React.js and springboot development, equipped with a strong background in Computer Science Engineering, proficient in designing and developing visually appealing and intuitive web applications using React.js and SCSS. Possesses an in-depth understanding of the software design and development toolset, seeking a role in designing, developing, and testing user-centric applications.
 
 ## Profile Summary
 
