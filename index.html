@@ -61,6 +61,9 @@
             font-size: 3rem;
             font-weight: 700;
         }
+        .home-text h3 span {
+            color: #00e6e6;
+        }
         .home-text p {
             font-size: 1.2rem;
             opacity: 0.8;
@@ -78,83 +81,139 @@
         .btn:hover {
             background: #009999;
         }
+        section {
+            padding: 100px 50px;
+        }
+        .about, .portfolio, .contact {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .about-img img, .portfolio-content img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .portfolio-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-content .row {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .portfolio-content .row .layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+            transition: 0.3s;
+        }
+        .portfolio-content .row:hover .layer {
+            opacity: 1;
+        }
+        .contact-text, .contact-form {
+            flex: 1;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+        }
+        .contact-form .submit {
+            background: #00e6e6;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact-form .submit:hover {
+            background: #009999;
+        }
+        .end {
+            text-align: center;
+            padding: 30px 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .end .top a {
+            color: #00e6e6;
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <body>
     <!------Header Section------>
     <header>
-      <a href="#" class="logo">Develo<span>pe</span>r..</a>
+        <a href="#" class="logo">Develo<span>pe</span>r..</a>
         <ul class="navlist">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About Me</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-      <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
     </header>
     
     <!---------Home Section--------------->
     <section class="home" id="home">
         <div class="home-text">
-        <div class="slide">
-          <span class="one">Hello</span>
-          <span class="two">I'm</span>
-        </div>
-            <h1>Niveth J Unnithan</h1>
-        <h3>FullStack <span>Developer.</span></h3>
-        <p>
-          Skilled Fullstack developer with 4 years of experience in React.js and
-          springboot development<br />
-          equipped with a strong background in Computer Science Engineering.
-        </p>
-        <div class="button">
-          <a
-            class="btn"
-            href="https://raw.githubusercontent.com/nivethjunnithan/nivethjunnithan.github.io/main/docs/Niveth_Resume.pdf"
-            download
-          >
-            Download Resume</a
-          >
-        </div>
+            <div class="slide">
+                <span class="one">Hello</span>
+                <span class="two">I'm</span>
+            </div>
+<h1>Niveth J Unnithan</h1>
+<h3>FullStack <span>Developer & AI/Digital Farming Student</span></h3>
+<p>
+    Skilled FullStack developer with 4+ years of experience in React.js and Spring Boot.<br>
+    Currently pursuing a Master’s in Digital Farming at Hochschule Weihenstephan-Triesdorf, Germany.
+</p>
+            <div class="button">
+                <a class="btn" href="https://raw.githubusercontent.com/nivethjunnithan/nivethjunnithan.github.io/main/docs/Niveth_Resume.pdf" download>Download Resume</a>
+            </div>
         </div>
     </section>
     
-    <!---------about Section --------------->
+    <!---------About Section --------------->
     <section class="about" id="about">
-      <div class="about-img">
-        <img src="img/about.jpg" />
-      </div>
-
-      <div class="about-text">
-        <h2>About <span>Me</span></h2>
-        <h4>FullStack Developer!</h4>
-        <p>
-          Hello there! I'm Niveth, a skilled full-stack developer specializing
-          in React.js, CSS, and Spring Boot. My focus is on crafting responsive
-          and user-friendly web applications that provide a smooth and enjoyable
-          experience for users. With a robust understanding of modern web
-          development principles and best practices across the full stack, I'm
-          adept at efficiently resolving issues. My attention to detail and
-          design aesthetics ensures that I create visually appealing and
-          intuitive user interfaces. Thank you for taking the time to explore my
-          profile. Let's create something remarkable together!
-        </p>
-        <a href="#" class="btn">More About</a>
+        <div class="about-img">
+            <img src="img/about.jpg" alt="About Niveth">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>FullStack Developer & AI/Digital Farming Enthusiast</h4>
+            <p>
+                Hello! I'm Niveth, a passionate full-stack developer and AI enthusiast 
+                with expertise in React.js, Spring Boot and modern web technologies. 
+                I focus on creating user-friendly web apps and innovative digital farming solutions. 
+                Currently, I'm pursuing my Master's in Digital Farming at Hochschule Weihenstephan-Triesdorf, Germany.
+            </p>
+            <a href="#" class="btn">More About</a>
         </div>
     </section>
     
-    <!-----------Services Section-------------->
-
     <!-----------Portfolio Section--------------->
     <section class="portfolio" id="portfolio">
-      <div class="main-text">
-        <h2><span>Latest </span>Projects</h2>
-      </div>
-      <div class="portfolio-content">
-        <div class="row">
-          <img src="img/project1.jpg" />
-          <div class="layer">
-            <h5>US Bank Modernization</h5>
+        <div class="main-text">
+            <h2><span>Latest </span>Projects</h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="img/project1.jpg" />
+                <div class="layer">
+                    <h5>US Bank Modernization</h5>
             <p>
               Contributed to the modernization project of the US Bank
               SinglePoint application, using React.js, scss and springboot.
@@ -162,13 +221,12 @@
             <a href="https://www.usbank.com/index.html">
               <i class="bx bx-link-external"></i
             ></a>
-          </div>
-        </div>
-
-        <div class="row">
-          <img src="img/project2.jpg" />
-          <div class="layer">
-            <h5>Image Classifier WebApp</h5>
+                </div>
+            </div>
+            <div class="row">
+                <img src="img/project2.jpg" />
+                <div class="layer">
+                    <h5>Image Classifier WebApp</h5>
             <p>
               An image processing model using neural networks which detects
               diseases of plant leaves.
@@ -178,13 +236,12 @@
             >
               <i class="bx bx-link-external"></i
             ></a>
-          </div>
-        </div>
-
-        <div class="row">
-          <img src="img/project3.jpg" />
-          <div class="layer">
-            <h5>Class App</h5>
+                </div>
+            </div>
+            <div class="row">
+                <img src="img/project3.jpg" />
+                <div class="layer">
+                    <h5>Class App</h5>
             <p>
               An app designed to provide attendence, marks, time-table and
               assignments to students which can be easily updated by admin.
@@ -192,13 +249,12 @@
             <a href="https://github.com/nivethjunnithan/ClassApp.git">
               <i class="bx bx-link-external"></i
             ></a>
-          </div>
-        </div>
-
-        <div class="row">
-          <img src="img/project4.jpg" />
-          <div class="layer">
-            <h5>Flutter Flask Login</h5>
+                </div>
+            </div>
+            <div class="row">
+                <img src="img/project4.jpg" />
+                <div class="layer">
+                    <h5>Flutter Flask Login</h5>
             <p>
               Flutter app integrated with Flask server with login and
               registration functionalities.
@@ -208,13 +264,13 @@
             >
               <i class="bx bx-link-external"></i
             ></a>
-          </div>
-        </div>
+                </div>
+            </div>
 
-        <div class="row">
-          <img src="img/project5.jpg" />
-          <div class="layer">
-            <h5>Android Kernel Development</h5>
+            <div class="row">
+                <img src="img/project5.jpg" />
+                <div class="layer">
+                    <h5>Android Kernel Development</h5>
             <p>
               Worked on the porting of Linux kernel 3.x.y versions for
               snapdragon device with processor version 625.
@@ -224,50 +280,37 @@
             >
               <i class="bx bx-link-external"></i
             ></a>
-          </div>
-        </div>
+                </div>
+            </div>
         </div>
     </section>
     
-    <!------------------Contact section------------>
+    <!------------------Contact Section------------>
     <section class="contact" id="contact">
-      <div class="contact-text">
-        <h2>Contact <span>Me!</span></h2>
-        <h4>If you have any project in your mind.</h4>
-        <p>
-          I'm a FullStack Developer - working on web development using React.js,
-          css and springboot.
-        </p>
-        <div class="list">
-          <li><a href="#">7561058937</a></li>
-          <li><a href="#">nivethunnithan@gmail.com</a></li>
-          <li><a href="#">Like Share & Subscribe</a></li>
+        <div class="contact-text">
+            <h2>Contact <span>Me!</span></h2>
+            <h4>Have a project in mind?</h4>
+            <p>
+                I'm a FullStack Developer - working on web development using React.js, Spring Boot, and AI/Digital Farming projects.
+            </p>
+            <div class="list">
+                <li><a href="tel:+4915510850049">+49 15510850049</a></li>
+                <li><a href="mailto:nivethunnithan@gmail.com">nivethunnithan@gmail.com</a></li>
+                <li><a href="#">Connect & Collaborate!</a></li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://github.com/nivethjunnithan/"><i class="bx bxl-github"></i></a>
+                <a href="https://www.linkedin.com/in/nivethunnithan/"><i class="bx bxl-linkedin"></i></a>
+            </div>
         </div>
-
-        <div class="contact-icons">
-          <a href="https://github.com/nivethjunnithan/"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/nivethjunnithan/"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-        </div>
-      </div>
-      <div class="contact-form">
-        <form action="">
-          <input type="name" placeholder="Your Name " required />
-          <input type="email" placeholder="Your Email " required />
-          <input type="number" placeholder="your Mobile Number" required />
-          <textarea
-            name=""
-            id=""
-            cols="35"
-            rows="10"
-            placeholder="How Can I Help You "
-            required
-          ></textarea>
-          <input type="submit" value="Send Message" class="submit" required />
-        </form>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <input type="number" placeholder="Your Mobile Number" required />
+                <textarea placeholder="How Can I Help You?" rows="8" required></textarea>
+                <input type="submit" value="Send Message" class="submit" />
+            </form>
         </div>
     </section>
     
