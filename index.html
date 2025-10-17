@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +16,15 @@
             font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth;
         }
+
         body {
-            background: linear-gradient(135deg, #1e1e2f, #3a3a52);
+            /* Gradient + Background Image */
+            background: linear-gradient(135deg, rgba(30, 30, 47, 0.8), rgba(58, 58, 82, 0.8)),
+                url('img/background.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: #fff;
         }
+
         header {
             display: flex;
             justify-content: space-between;
@@ -30,26 +36,32 @@
             top: 0;
             z-index: 1000;
         }
+
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
             text-transform: uppercase;
         }
+
         .navlist {
             list-style: none;
             display: flex;
         }
+
         .navlist li {
             margin: 0 15px;
         }
+
         .navlist a {
             text-decoration: none;
             color: #fff;
             transition: 0.3s;
         }
+
         .navlist a:hover {
-            color: #00e6e6;
+            color: #4CAF50;
         }
+
         .home {
             display: flex;
             justify-content: center;
@@ -57,53 +69,67 @@
             height: 100vh;
             text-align: center;
         }
+
         .home-text h1 {
             font-size: 3rem;
             font-weight: 700;
         }
+
         .home-text h3 span {
-            color: #00e6e6;
+            color: #4CAF50;
         }
+
         .home-text p {
             font-size: 1.2rem;
             opacity: 0.8;
         }
+
         .btn {
             display: inline-block;
             padding: 12px 25px;
-            background: #00e6e6;
+            background: #4CAF50;
             color: #fff;
             border-radius: 8px;
             margin-top: 15px;
             text-decoration: none;
             transition: 0.3s;
         }
+
         .btn:hover {
             background: #009999;
         }
+
         section {
             padding: 100px 50px;
         }
-        .about, .portfolio, .contact {
+
+        .about,
+        .portfolio,
+        .contact {
             display: flex;
             gap: 50px;
             flex-wrap: wrap;
             align-items: center;
         }
-        .about-img img, .portfolio-content img {
+
+        .about-img img,
+        .portfolio-content img {
             width: 100%;
             border-radius: 10px;
         }
+
         .portfolio-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
         }
+
         .portfolio-content .row {
             position: relative;
             overflow: hidden;
             border-radius: 10px;
         }
+
         .portfolio-content .row .layer {
             position: absolute;
             top: 0;
@@ -121,39 +147,49 @@
             padding: 15px;
             transition: 0.3s;
         }
+
         .portfolio-content .row:hover .layer {
             opacity: 1;
         }
-        .contact-text, .contact-form {
+
+        .contact-text,
+        .contact-form {
             flex: 1;
         }
-        .contact-form input, .contact-form textarea {
+
+        .contact-form input,
+        .contact-form textarea {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
             border-radius: 8px;
             border: none;
         }
+
         .contact-form .submit {
-            background: #00e6e6;
+            background: #4CAF50;
             color: #fff;
             cursor: pointer;
             transition: 0.3s;
         }
+
         .contact-form .submit:hover {
             background: #009999;
         }
+
         .end {
             text-align: center;
             padding: 30px 0;
             background: rgba(0, 0, 0, 0.7);
         }
+
         .end .top a {
-            color: #00e6e6;
+            color: #4CAF50;
             font-size: 1.5rem;
         }
     </style>
 </head>
+
 <body>
     <!------Header Section------>
     <header>
@@ -166,7 +202,7 @@
         </ul>
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
-    
+
     <!---------Home Section--------------->
     <section class="home" id="home">
         <div class="home-text">
@@ -174,18 +210,20 @@
                 <span class="one">Hello</span>
                 <span class="two">I'm</span>
             </div>
-<h1>Niveth J Unnithan</h1>
-<h3>FullStack <span>Developer & AI/Digital Farming Student</span></h3>
-<p>
-    Skilled FullStack developer with 4+ years of experience in React.js and Spring Boot.<br>
-    Currently pursuing a Master’s in Digital Farming at Hochschule Weihenstephan-Triesdorf, Germany.
-</p>
+            <h1>Niveth J Unnithan</h1>
+            <h3>FullStack <span>Developer & AI/Digital Farming Student</span></h3>
+            <p>
+                Skilled FullStack developer with 4+ years of experience in React.js and Spring Boot.<br>
+                Currently pursuing a Master’s in Digital Farming at Hochschule Weihenstephan-Triesdorf, Germany.
+            </p>
             <div class="button">
-                <a class="btn" href="https://raw.githubusercontent.com/nivethjunnithan/nivethjunnithan.github.io/main/docs/Niveth_Resume.pdf" download>Download Resume</a>
+                <a class="btn"
+                    href="https://raw.githubusercontent.com/nivethjunnithan/nivethjunnithan.github.io/main/docs/Niveth_Resume.pdf"
+                    download>Download Resume</a>
             </div>
         </div>
     </section>
-    
+
     <!---------About Section --------------->
     <section class="about" id="about">
         <div class="about-img">
@@ -195,15 +233,15 @@
             <h2>About <span>Me</span></h2>
             <h4>FullStack Developer & AI/Digital Farming Enthusiast</h4>
             <p>
-                Hello! I'm Niveth, a passionate full-stack developer and AI enthusiast 
-                with expertise in React.js, Spring Boot and modern web technologies. 
-                I focus on creating user-friendly web apps and innovative digital farming solutions. 
+                Hello! I'm Niveth, a passionate full-stack developer and AI enthusiast
+                with expertise in React.js, Spring Boot and modern web technologies.
+                I focus on creating user-friendly web apps and innovative digital farming solutions.
                 Currently, I'm pursuing my Master's in Digital Farming at Hochschule Weihenstephan-Triesdorf, Germany.
             </p>
             <a href="#" class="btn">More About</a>
         </div>
     </section>
-    
+
     <!-----------Portfolio Section--------------->
     <section class="portfolio" id="portfolio">
         <div class="main-text">
@@ -214,56 +252,48 @@
                 <img src="img/project1.jpg" />
                 <div class="layer">
                     <h5>US Bank Modernization</h5>
-            <p>
-              Contributed to the modernization project of the US Bank
-              SinglePoint application, using React.js, scss and springboot.
-            </p>
-            <a href="https://www.usbank.com/index.html">
-              <i class="bx bx-link-external"></i
-            ></a>
+                    <p>
+                        Contributed to the modernization project of the US Bank
+                        SinglePoint application, using React.js, scss and springboot.
+                    </p>
+                    <a href="https://www.usbank.com/index.html">
+                        <i class="bx bx-link-external"></i></a>
                 </div>
             </div>
             <div class="row">
                 <img src="img/project2.jpg" />
                 <div class="layer">
                     <h5>Image Classifier WebApp</h5>
-            <p>
-              An image processing model using neural networks which detects
-              diseases of plant leaves.
-            </p>
-            <a
-              href="https://github.com/nivethjunnithan/image-classifier-webapp-flask.git"
-            >
-              <i class="bx bx-link-external"></i
-            ></a>
+                    <p>
+                        An image processing model using neural networks which detects
+                        diseases of plant leaves.
+                    </p>
+                    <a href="https://github.com/nivethjunnithan/image-classifier-webapp-flask.git">
+                        <i class="bx bx-link-external"></i></a>
                 </div>
             </div>
             <div class="row">
                 <img src="img/project3.jpg" />
                 <div class="layer">
                     <h5>Class App</h5>
-            <p>
-              An app designed to provide attendence, marks, time-table and
-              assignments to students which can be easily updated by admin.
-            </p>
-            <a href="https://github.com/nivethjunnithan/ClassApp.git">
-              <i class="bx bx-link-external"></i
-            ></a>
+                    <p>
+                        An app designed to provide attendence, marks, time-table and
+                        assignments to students which can be easily updated by admin.
+                    </p>
+                    <a href="https://github.com/nivethjunnithan/ClassApp.git">
+                        <i class="bx bx-link-external"></i></a>
                 </div>
             </div>
             <div class="row">
                 <img src="img/project4.jpg" />
                 <div class="layer">
                     <h5>Flutter Flask Login</h5>
-            <p>
-              Flutter app integrated with Flask server with login and
-              registration functionalities.
-            </p>
-            <a
-              href="https://github.com/nivethjunnithan/Flutter-flask-login.git"
-            >
-              <i class="bx bx-link-external"></i
-            ></a>
+                    <p>
+                        Flutter app integrated with Flask server with login and
+                        registration functionalities.
+                    </p>
+                    <a href="https://github.com/nivethjunnithan/Flutter-flask-login.git">
+                        <i class="bx bx-link-external"></i></a>
                 </div>
             </div>
 
@@ -271,27 +301,25 @@
                 <img src="img/project5.jpg" />
                 <div class="layer">
                     <h5>Android Kernel Development</h5>
-            <p>
-              Worked on the porting of Linux kernel 3.x.y versions for
-              snapdragon device with processor version 625.
-            </p>
-            <a
-              href="https://github.com/nivethjunnithan/android_kernel_xiaomi_msm8953.git"
-            >
-              <i class="bx bx-link-external"></i
-            ></a>
+                    <p>
+                        Worked on the porting of Linux kernel 3.x.y versions for
+                        snapdragon device with processor version 625.
+                    </p>
+                    <a href="https://github.com/nivethjunnithan/android_kernel_xiaomi_msm8953.git">
+                        <i class="bx bx-link-external"></i></a>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!------------------Contact Section------------>
     <section class="contact" id="contact">
         <div class="contact-text">
             <h2>Contact <span>Me!</span></h2>
             <h4>Have a project in mind?</h4>
             <p>
-                I'm a FullStack Developer - working on web development using React.js, Spring Boot, and AI/Digital Farming projects.
+                I'm a FullStack Developer - working on web development using React.js, Spring Boot, and AI/Digital
+                Farming projects.
             </p>
             <div class="list">
                 <li><a href="tel:+4915510850049">+49 15510850049</a></li>
@@ -313,7 +341,7 @@
             </form>
         </div>
     </section>
-    
+
     <!---------End Section---------->
     <section class="end">
         <div class="last-text">
@@ -324,4 +352,5 @@
         </div>
     </section>
 </body>
+
 </html>
