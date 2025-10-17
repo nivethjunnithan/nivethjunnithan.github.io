@@ -2,355 +2,801 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Niveth J Unnithan — Full Stack Developer & AI / Digital Farming Student</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  <style>
+    :root {
+      --bg-1: #0f1724;
+      /* deep navy */
+      --bg-2: #0b1220;
+      --accent: #22c55e;
+      /* neon green */
+      --muted: #94a3b8;
+      --glass: rgba(255, 255, 255, 0.04);
+      --card: rgba(255, 255, 255, 0.03);
+      --glass-border: rgba(255, 255, 255, 0.06);
+      --max-width: 1100px;
+    }
 
-        body {
-            /* Gradient + Background Image */
-            background: linear-gradient(135deg, rgba(30, 30, 47, 0.8), rgba(58, 58, 82, 0.8)),
-                url('img/background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-        }
+    * {
+      box-sizing: border-box
+    }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
+      color: #e6eef8;
+      -webkit-font-smoothing: antialiased
+    }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
+    a {
+      color: inherit
+    }
 
-        .navlist {
-            list-style: none;
-            display: flex;
-        }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(6px);
+      background: linear-gradient(180deg, rgba(10, 12, 20, 0.6), rgba(10, 12, 20, 0.2));
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      z-index: 50
+    }
 
-        .navlist li {
-            margin: 0 15px;
-        }
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      padding: 0 24px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
 
-        .navlist a {
-            text-decoration: none;
-            color: #fff;
-            transition: 0.3s;
-        }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700
+    }
 
-        .navlist a:hover {
-            color: #4CAF50;
-        }
+    .logo-dot {
+      width: 14px;
+      height: 14px;
+      background: linear-gradient(135deg, var(--accent), #06b6d4);
+      border-radius: 4px;
+      box-shadow: 0 6px 20px rgba(34, 197, 94, 0.12)
+    }
 
-        .home {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
+    nav ul {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
 
-        .home-text h1 {
-            font-size: 3rem;
-            font-weight: 700;
-        }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 8px
+    }
 
-        .home-text h3 span {
-            color: #4CAF50;
-        }
+    nav a:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.02)
+    }
 
-        .home-text p {
-            font-size: 1.2rem;
-            opacity: 0.8;
-        }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(90deg, var(--accent), #06b6d4);
+      color: #04111a;
+      padding: 8px 12px;
+      border-radius: 9px;
+      font-weight: 700;
+      text-decoration: none
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #4CAF50;
-            color: #fff;
-            border-radius: 8px;
-            margin-top: 15px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 120px 24px 60px
+    }
 
-        .btn:hover {
-            background: #009999;
-        }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 40px;
+      align-items: center;
+      width: 100%;
+      max-width: var(--max-width)
+    }
 
-        section {
-            padding: 100px 50px;
-        }
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      border: 1px solid var(--glass-border);
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 10px 40px rgba(2, 6, 23, 0.6)
+    }
 
-        .about,
-        .portfolio,
-        .contact {
-            display: flex;
-            gap: 50px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
+    .intro h1 {
+      font-size: 36px;
+      margin: 0 0 8px;
+      line-height: 1.02
+    }
 
-        .about-img img,
-        .portfolio-content img {
-            width: 100%;
-            border-radius: 10px;
-        }
+    .intro h1 .name {
+      background: linear-gradient(90deg, var(--accent), #06b6d4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
 
-        .portfolio-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
+    .intro p {
+      color: var(--muted);
+      margin: 12px 0 18px;
+      font-size: 15px
+    }
 
-        .portfolio-content .row {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-        }
+    .meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap
+    }
 
-        .portfolio-content .row .layer {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            opacity: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 15px;
-            transition: 0.3s;
-        }
+    .badge {
+      background: var(--card);
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-weight: 600;
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.02)
+    }
 
-        .portfolio-content .row:hover .layer {
-            opacity: 1;
-        }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 18px
+    }
 
-        .contact-text,
-        .contact-form {
-            flex: 1;
-        }
+    .btn-outline {
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: transparent;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600
+    }
 
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 8px;
-            border: none;
-        }
+    /* Profile card */
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 12px
+    }
 
-        .contact-form .submit {
-            background: #4CAF50;
-            color: #fff;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #0b1220, rgba(255, 255, 255, 0.02));
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.04)
+    }
 
-        .contact-form .submit:hover {
-            background: #009999;
-        }
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 14px
+    }
 
-        .end {
-            text-align: center;
-            padding: 30px 0;
-            background: rgba(0, 0, 0, 0.7);
-        }
+    .location {
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
 
-        .end .top a {
-            color: #4CAF50;
-            font-size: 1.5rem;
-        }
-    </style>
+    /* SECTIONS */
+    section {
+      padding: 70px 24px
+    }
+
+    .section-title {
+      max-width: var(--max-width);
+      margin: 0 auto 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 20px
+    }
+
+    .section-sub {
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    /* ABOUT */
+    .about-grid {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 30px;
+      align-items: start
+    }
+
+    .about-text h3 {
+      margin: 0;
+      font-size: 18px
+    }
+
+    .about-text p {
+      color: var(--muted);
+      line-height: 1.6
+    }
+
+    .skill-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px
+    }
+
+    .skill {
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .skill .bar {
+      height: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 8px;
+      flex: 1;
+      margin-left: 14px;
+      overflow: hidden
+    }
+
+    .skill .bar>i {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), #06b6d4);
+      width: 0%
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      max-width: var(--max-width);
+      margin: 0 auto
+    }
+
+    .project {
+      padding: 16px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      position: relative;
+      overflow: hidden
+    }
+
+    .project h4 {
+      margin: 0 0 8px
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 12px
+    }
+
+    .project .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap
+    }
+
+    .tag {
+      font-size: 12px;
+      padding: 6px 8px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--muted)
+    }
+
+    .project .links {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px
+    }
+
+    .link-btn {
+      padding: 8px 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.03)
+    }
+
+    /* STUDIES + MAP */
+    .study-card {
+      display: flex;
+      gap: 14px;
+      align-items: center
+    }
+
+    .study-card img {
+      width: 72px;
+      height: 72px;
+      border-radius: 10px;
+      object-fit: cover
+    }
+
+    .map-wrap {
+      margin-top: 14px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.03)
+    }
+
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: 0
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 20px
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    input,
+    textarea {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      padding: 12px;
+      border-radius: 10px;
+      color: #e6eef8
+    }
+
+    .submit {
+      background: linear-gradient(90deg, var(--accent), #06b6d4);
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      color: #04111a;
+      font-weight: 700;
+      cursor: pointer
+    }
+
+    footer {
+      padding: 28px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    /* RESPONSIVE */
+    @media (max-width:980px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        align-items: center
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr
+      }
+
+      nav ul {
+        display: none
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <!------Header Section------>
-    <header>
-        <a href="#" class="logo">Develo<span>pe</span>r..</a>
-        <ul class="navlist">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div class="logo-dot" aria-hidden></div>
+        <div>
+          <div style="font-size:14px">Niveth J Unnithan</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">Full Stack Developer · AI & Digital Farming
+            Student
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#study">Study</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="bx bx-menu" id="menu-icon"></div>
-    </header>
+      </nav>
+      <a class="cta"
+        href="https://raw.githubusercontent.com/nivethjunnithan/nivethjunnithan.github.io/main/docs/Niveth_Jayachandran_Unnithan_Resume_StudentDeveloper.pdf"
+        target="_blank">Resume <i class='bx bx-download'></i></a>
+    </div>
+  </header>
 
-    <!---------Home Section--------------->
-    <section class="home" id="home">
-        <div class="home-text">
-            <div class="slide">
-                <span class="one">Hello</span>
-                <span class="two">I'm</span>
-            </div>
-            <h1>Niveth J Unnithan</h1>
-            <h3>FullStack <span>Developer & AI/Digital Farming Student</span></h3>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-grid">
+        <div class="card intro">
+          <div class="meta">
+            <div class="badge">Based in Freising, Germany 🇩🇪</div>
+            <div class="badge">4+ years • React / Spring Boot</div>
+            <div class="badge">Open to remote roles</div>
+          </div>
+          <h1>Hello, I’m <span class="name">Niveth J Unnithan</span></h1>
+          <p>Full Stack Developer focused on React.js + Spring Boot, currently pursuing an MSc in Digital Farming & AI.
+            I build scalable web applications and ML-powered solutions for agriculture & beyond.</p>
+
+          <div class="hero-actions">
+            <a class="cta" href="#projects">View Projects</a>
+            <a class="btn-outline" href="mailto:nivethunnithan@gmail.com">Hire / Contact</a>
+            <a class="btn-outline" href="https://github.com/nivethjunnithan" target="_blank">GitHub</a>
+          </div>
+
+          <div style="margin-top:18px;color:var(--muted);font-size:13px">I like solving problems with clean code,
+            pragmatic cloud solutions, and a touch of AI.</div>
+        </div>
+
+        <aside class="card profile">
+          <div class="avatar">
+            <!-- replace src with real photo if available -->
+            <img src="img/about.jpeg" alt="Niveth Avatar">
+          </div>
+          <div style="font-weight:700">Niveth J Unnithan</div>
+          <div style="color:var(--muted);font-size:14px">Full Stack Developer · MSc (Digital Farming & AI) Student</div>
+          <div class="location"><i class='bx bxs-map'></i> Freising, Bavaria, Germany</div>
+          <div style="display:flex;gap:10px;margin-top:8px">
+            <a href="tel:+4915510850049" class="badge">+49 15510850049</a>
+            <a href="mailto:nivethunnithan@gmail.com" class="badge">nivethunnithan@gmail.com</a>
+          </div>
+          <div style="display:flex;gap:10px;margin-top:12px">
+            <a href="https://github.com/nivethjunnithan" class="link-btn" target="_blank"><i class='bx bxl-github'></i>
+              GitHub</a>
+            <a href="https://www.linkedin.com/in/nivethunnithan/" class="link-btn" target="_blank"><i
+                class='bx bxl-linkedin'></i> LinkedIn</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <div class="section-sub">Developer • AI Enthusiast • Digital Farming Student</div>
+      </div>
+
+      <div class="about-grid">
+        <div class="card about-text">
+          <h3>Who I am</h3>
+          <div class="card" style="max-width:var(--max-width);margin:0 auto;">
             <p>
-                Skilled FullStack developer with 4+ years of experience in React.js and Spring Boot.<br>
-                Currently pursuing a Master’s in Digital Farming at Hochschule Weihenstephan-Triesdorf, Germany.
+              I'm a pragmatic full-stack developer with 4+ years of experience building web applications using React.js
+              and Spring Boot.
+              I previously worked at TCS and have built production-grade features for enterprise and consumer
+              applications.
+              Currently expanding my expertise into Digital Farming & Smart Agriculture, leveraging AI, IoT, and Data
+              Science
+              to build sustainable tech-driven solutions for agriculture.
+              My current focus is at the intersection of AI and agriculture — applying machine learning and cloud-native
+              architectures
+              to solve real farming problems.
             </p>
-            <div class="button">
-                <a class="btn"
-                    href="https://raw.githubusercontent.com/nivethjunnithan/nivethjunnithan.github.io/main/docs/Niveth_Resume.pdf"
-                    download>Download Resume</a>
+          </div>
+          <h3 style="margin-top:14px">Highlights</h3>
+          <ul style="color:var(--muted);line-height:1.8">
+            <li>Expertise in React.js, modern JavaScript (ES6+), and component-driven UI.</li>
+            <li>Backend experience with Spring Boot, REST API design, and databases (MySQL, PostgreSQL, H2).</li>
+            <li>Familiar with Azure services, Docker, and Git-based workflows.</li>
+            <li>Built ML-powered Image Classifier for plant disease detection and integrated it into web apps.</li>
+          </ul>
+
+          <div class="skill-list">
+            <div class="skill"><strong>React.js</strong>
+              <div class="bar" data-value="95"><i></i></div>
             </div>
+            <div class="skill"><strong>Spring Boot</strong>
+              <div class="bar" data-value="88"><i></i></div>
+            </div>
+            <div class="skill"><strong>JavaScript / Node</strong>
+              <div class="bar" data-value="85"><i></i></div>
+            </div>
+            <div class="skill"><strong>Azure & DevOps</strong>
+              <div class="bar" data-value="70"><i></i></div>
+            </div>
+            <div class="skill"><strong>AI / Image Processing</strong>
+              <div class="bar" data-value="72"><i></i></div>
+            </div>
+          </div>
         </div>
+
+        <aside class="card">
+          <h4>Quick Facts</h4>
+          <ul style="color:var(--muted);line-height:1.8;padding-left:20px;margin:8px 0;">
+            <li>Currently based in Freising, Germany 🇩🇪</li>
+            <li>Pursuing MSc in Digital Farming & AI at Hochschule Weihenstephan-Triesdorf</li>
+            <li>4+ years of professional experience in Full Stack Development (React.js & Spring Boot)</li>
+            <li>Ex-TCS Software Engineer</li>
+            <li>Open to collaborations and remote opportunities</li>
+          </ul>
+
+          <h4 style="margin-top:12px">Certifications</h4>
+          <ul style="color:var(--muted);line-height:1.8;padding-left:20px;margin:8px 0;">
+            <li>Machine Learning Specialisation</li>
+            <li>Microsoft Azure Fundamentals</li>
+            <li>Azure AI Fundamentals</li>
+            <li>Cloud Computing Basics</li>
+          </ul>
+
+          <h4 style="margin-top:12px">Personal</h4>
+          <p style="color:var(--muted);margin-top:6px">A creative and logical problem-solver who enjoys building
+            scalable tech solutions, exploring AI applications in agriculture, and constantly learning emerging
+            technologies. Passionate about sustainable innovation, nature, and digital transformation.</p>
+        </aside>
+
+      </div>
     </section>
 
-    <!---------About Section --------------->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/about.jpg" alt="About Niveth">
-        </div>
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4>FullStack Developer & AI/Digital Farming Enthusiast</h4>
-            <p>
-                Hello! I'm Niveth, a passionate full-stack developer and AI enthusiast
-                with expertise in React.js, Spring Boot and modern web technologies.
-                I focus on creating user-friendly web apps and innovative digital farming solutions.
-                Currently, I'm pursuing my Master's in Digital Farming at Hochschule Weihenstephan-Triesdorf, Germany.
-            </p>
-            <a href="#" class="btn">More About</a>
-        </div>
+    <section id="projects">
+      <div class="section-title">
+        <h2>Selected Projects</h2>
+        <div class="section-sub">A curated selection of work showcasing full-stack & AI skills</div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project card">
+          <h4>US Bank Modernization</h4>
+          <p>Contributed to modernization of the SinglePoint application using React.js, SCSS and Spring Boot; focused
+            on componentization and performance improvements.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">Spring Boot</span><span
+              class="tag">SCSS</span></div>
+          <div class="links"><a class="link-btn" href="https://www.usbank.com/index.html" target="_blank">Live</a></div>
+        </article>
+
+        <article class="project card">
+          <h4>Image Classifier WebApp</h4>
+          <p>Web application that uses a CNN model to detect diseases in plant leaves. Flask backend serves predictions
+            to a React frontend.</p>
+          <div class="tags"><span class="tag">Flask</span><span class="tag">CNN</span><span class="tag">Python</span>
+          </div>
+          <div class="links"><a class="link-btn"
+              href="https://github.com/nivethjunnithan/image-classifier-webapp-flask.git" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <h4>Class App</h4>
+          <p>Student administration app with attendance, timetable, marks and admin features. Built with a React
+            frontend and REST backend.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">REST</span></div>
+          <div class="links"><a class="link-btn" href="https://github.com/nivethjunnithan/ClassApp.git"
+              target="_blank">GitHub</a></div>
+        </article>
+
+        <article class="project card">
+          <h4>Flutter + Flask Login</h4>
+          <p>Mobile app with secure login and registration built in Flutter and Flask for backend authentication.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Flask</span></div>
+          <div class="links"><a class="link-btn" href="https://github.com/nivethjunnithan/Flutter-flask-login.git"
+              target="_blank">GitHub</a></div>
+        </article>
+
+        <article class="project card">
+          <h4>RAG (Retrieval-Augmented Generation) From Scratch</h4>
+          <p>Implemented a step-by-step RAG system using LLMs to fetch relevant documents for context-aware responses.
+            Covered document indexing, retrieval mechanisms, and integration with generative models for accurate,
+            up-to-date outputs.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">LLM</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Jupyter</span>
+          </div>
+          <div class="links">
+            <a class="link-btn" href="https://github.com/nivethjunnithan/ai-rag" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <h4>Custom Hooks in React</h4>
+          <p>Created reusable and efficient custom hooks to simplify state management and side effects in React
+            applications. Focused on modularity and code reusability across projects.</p>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Custom Hooks</span>
+          </div>
+          <div class="links">
+            <a class="link-btn" href="https://github.com/nivethjunnithan/custom-hooks-react" target="_blank">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project card">
+          <h4>Android Kernel Development</h4>
+          <p>Ported Linux 3.x kernel components for Snapdragon 625 (msm8953), contributing to performance and stability
+            enhancements.</p>
+          <div class="tags"><span class="tag">Linux</span><span class="tag">Kernel</span></div>
+          <div class="links"><a class="link-btn"
+              href="https://github.com/nivethjunnithan/android_kernel_xiaomi_msm8953.git" target="_blank">GitHub</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-----------Portfolio Section--------------->
-    <section class="portfolio" id="portfolio">
-        <div class="main-text">
-            <h2><span>Latest </span>Projects</h2>
-        </div>
-        <div class="portfolio-content">
-            <div class="row">
-                <img src="img/project1.jpg" />
-                <div class="layer">
-                    <h5>US Bank Modernization</h5>
-                    <p>
-                        Contributed to the modernization project of the US Bank
-                        SinglePoint application, using React.js, scss and springboot.
-                    </p>
-                    <a href="https://www.usbank.com/index.html">
-                        <i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="img/project2.jpg" />
-                <div class="layer">
-                    <h5>Image Classifier WebApp</h5>
-                    <p>
-                        An image processing model using neural networks which detects
-                        diseases of plant leaves.
-                    </p>
-                    <a href="https://github.com/nivethjunnithan/image-classifier-webapp-flask.git">
-                        <i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="img/project3.jpg" />
-                <div class="layer">
-                    <h5>Class App</h5>
-                    <p>
-                        An app designed to provide attendence, marks, time-table and
-                        assignments to students which can be easily updated by admin.
-                    </p>
-                    <a href="https://github.com/nivethjunnithan/ClassApp.git">
-                        <i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="img/project4.jpg" />
-                <div class="layer">
-                    <h5>Flutter Flask Login</h5>
-                    <p>
-                        Flutter app integrated with Flask server with login and
-                        registration functionalities.
-                    </p>
-                    <a href="https://github.com/nivethjunnithan/Flutter-flask-login.git">
-                        <i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
+    <section id="study">
+      <div class="section-title">
+        <h2>Current Studies</h2>
+        <div class="section-sub">MSc in Digital Farming & AI — Hochschule Weihenstephan-Triesdorf</div>
+      </div>
 
-            <div class="row">
-                <img src="img/project5.jpg" />
-                <div class="layer">
-                    <h5>Android Kernel Development</h5>
-                    <p>
-                        Worked on the porting of Linux kernel 3.x.y versions for
-                        snapdragon device with processor version 625.
-                    </p>
-                    <a href="https://github.com/nivethjunnithan/android_kernel_xiaomi_msm8953.git">
-                        <i class="bx bx-link-external"></i></a>
-                </div>
-            </div>
+      <div
+        style="max-width:var(--max-width);margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:20px;align-items:start">
+        <div class="card">
+          <h3 style="margin-top:0">About the Program</h3>
+          <p style="color:var(--muted)">The Master's program in Digital Farming systematically prepares students to meet
+            the challenges of smart agriculture. It blends agricultural sciences with technology, AI, robotics, and
+            digitalisation — aiming to enhance sustainability, optimize resources, and improve animal welfare while
+            managing the high workloads of modern farming. The program also provides international exposure and
+            intercultural competence, preparing students for global agricultural innovation.</p>
+
+          <h4 style="margin-top:12px">How it connects with my work</h4>
+          <ul style="color:var(--muted);line-height:1.8">
+            <li>Applying ML models (image classification) to detect plant diseases and enhance crop health monitoring.
+            </li>
+            <li>Leveraging IoT and data analytics to improve resource efficiency and enable smart agriculture systems.
+            </li>
+            <li>Building full-stack pipelines to collect, process, and visualize agricultural and environmental data.
+            </li>
+            <li>Exploring robotics and AI-driven automation to improve precision farming.</li>
+            <li>Developing scalable, cloud-deployed solutions for sustainable agriculture.</li>
+          </ul>
         </div>
+        <aside class="card">
+          <div class="study-card">
+            <img src="img/logo.png" alt="HSWT Logo">
+            <div>
+              <div style="font-weight:700">Hochschule Weihenstephan-Triesdorf</div>
+              <div style="color:var(--muted);font-size:13px;margin-top:6px">MSc Digital Farming & AI — Started Oct 1,
+                2025</div>
+            </div>
+          </div>
+          <div class="map-wrap">
+            <!-- HSWT Freising campus exact location in satellite view -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.98988504437!2d11.728207!3d48.3956121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e6b193a6ddb95%3A0x6008a7d0683a299f!2sHochschule%20Weihenstephan-Triesdorf!5e0!3m2!1sen!2sus!4v1697040000000&t=k"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <!------------------Contact Section------------>
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact <span>Me!</span></h2>
-            <h4>Have a project in mind?</h4>
-            <p>
-                I'm a FullStack Developer - working on web development using React.js, Spring Boot, and AI/Digital
-                Farming projects.
-            </p>
-            <div class="list">
-                <li><a href="tel:+4915510850049">+49 15510850049</a></li>
-                <li><a href="mailto:nivethunnithan@gmail.com">nivethunnithan@gmail.com</a></li>
-                <li><a href="#">Connect & Collaborate!</a></li>
-            </div>
-            <div class="contact-icons">
-                <a href="https://github.com/nivethjunnithan/"><i class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/in/nivethunnithan/"><i class="bx bxl-linkedin"></i></a>
-            </div>
-        </div>
-        <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-                <input type="number" placeholder="Your Mobile Number" required />
-                <textarea placeholder="How Can I Help You?" rows="8" required></textarea>
-                <input type="submit" value="Send Message" class="submit" />
-            </form>
-        </div>
-    </section>
+    <section id="contact">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <div class="section-sub">Let's build something together</div>
+      </div>
 
-    <!---------End Section---------->
-    <section class="end">
-        <div class="last-text">
-            <p>Designed by Myself</p>
+      <div class="contact-grid">
+        <div class="card contact-form">
+          <input type="text" id="name" placeholder="Your name" />
+          <input type="email" id="email" placeholder="Your email" />
+          <input type="text" id="subject" placeholder="Subject" />
+          <textarea id="message" rows="6" placeholder="How can I help you?"></textarea>
+          <button class="submit" id="send">Send Message</button>
+          <div id="note" style="color:var(--muted);font-size:13px;margin-top:6px">Prefer email? <a
+              href="mailto:nivethunnithan@gmail.com">nivethunnithan@gmail.com</a></div>
         </div>
-        <div class="top">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
+
+        <aside class="card">
+          <h4>Get in touch</h4>
+          <p style="color:var(--muted)">I'm open to freelance, collaboration, and full-time opportunities. Based in
+            Freising — willing to relocate within Germany or work remotely.</p>
+
+          <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
+            <div style="color:var(--muted)"><strong>Email</strong><br /><a
+                href="mailto:nivethunnithan@gmail.com">nivethunnithan@gmail.com</a></div>
+            <div style="color:var(--muted)"><strong>Phone</strong><br /><a href="tel:+4915510850049">+49 15510850049</a>
+            </div>
+            <div style="display:flex;gap:10px;margin-top:8px">
+              <a href="https://github.com/nivethjunnithan" target="_blank" class="link-btn"><i
+                  class='bx bxl-github'></i></a>
+              <a href="https://www.linkedin.com/in/nivethjunnithan/" target="_blank" class="link-btn"><i
+                  class='bx bxl-linkedin'></i></a>
+            </div>
+          </div>
+        </aside>
+      </div>
     </section>
+  </main>
+
+  <footer>
+    <div style="max-width:var(--max-width);margin:0 auto;padding:6px 12px">Designed & maintained by Niveth • © <span
+        id="yr"></span></div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    // Animate skill bars
+    document.querySelectorAll('.skill .bar').forEach(bar => {
+      const val = bar.getAttribute('data-value') || 60;
+      const inner = bar.querySelector('i');
+      setTimeout(() => { inner.style.width = val + '%'; }, 200);
+    });
+
+    // Simple contact form handler (client-only)
+    document.getElementById('send').addEventListener('click', () => {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if (!name || !email || !message) {
+        alert('Please fill name, email and message.');
+        return;
+      }
+      // create mailto link
+      const subject = encodeURIComponent(document.getElementById('subject').value || 'Website contact');
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      window.location.href = `mailto:nivethunnithan@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
 </body>
 
 </html>
