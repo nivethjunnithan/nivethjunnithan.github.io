@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Niveth J Unnithan — Full Stack Developer & AI / Digital Farming Student</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <title>Niveth J Unnithan — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   <style>
     :root {
@@ -22,21 +22,22 @@
     }
 
     * {
-      box-sizing: border-box
+      box-sizing: border-box;
     }
 
     html,
     body {
       height: 100%;
       margin: 0;
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto,
+        "Helvetica Neue", Arial;
       background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
       color: #e6eef8;
-      -webkit-font-smoothing: antialiased
+      -webkit-font-smoothing: antialiased;
     }
 
     a {
-      color: inherit
+      color: inherit;
     }
 
     header {
@@ -49,9 +50,11 @@
       align-items: center;
       justify-content: center;
       backdrop-filter: blur(6px);
-      background: linear-gradient(180deg, rgba(10, 12, 20, 0.6), rgba(10, 12, 20, 0.2));
+      background: linear-gradient(180deg,
+          rgba(10, 12, 20, 0.6),
+          rgba(10, 12, 20, 0.2));
       border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-      z-index: 50
+      z-index: 50;
     }
 
     .container {
@@ -61,14 +64,14 @@
       margin: 0 auto;
       display: flex;
       align-items: center;
-      justify-content: space-between
+      justify-content: space-between;
     }
 
     .brand {
       display: flex;
       align-items: center;
       gap: 12px;
-      font-weight: 700
+      font-weight: 700;
     }
 
     .logo-dot {
@@ -76,7 +79,7 @@
       height: 14px;
       background: linear-gradient(135deg, var(--accent), #06b6d4);
       border-radius: 4px;
-      box-shadow: 0 6px 20px rgba(34, 197, 94, 0.12)
+      box-shadow: 0 6px 20px rgba(34, 197, 94, 0.12);
     }
 
     nav ul {
@@ -85,7 +88,7 @@
       align-items: center;
       list-style: none;
       margin: 0;
-      padding: 0
+      padding: 0;
     }
 
     nav a {
@@ -94,12 +97,12 @@
       font-weight: 600;
       font-size: 14px;
       padding: 8px 12px;
-      border-radius: 8px
+      border-radius: 8px;
     }
 
     nav a:hover {
       color: #fff;
-      background: rgba(255, 255, 255, 0.02)
+      background: rgba(255, 255, 255, 0.02);
     }
 
     .cta {
@@ -111,7 +114,7 @@
       padding: 8px 12px;
       border-radius: 9px;
       font-weight: 700;
-      text-decoration: none
+      text-decoration: none;
     }
 
     /* HERO */
@@ -119,7 +122,7 @@
       min-height: 100vh;
       display: grid;
       place-items: center;
-      padding: 120px 24px 60px
+      padding: 120px 24px 60px;
     }
 
     .hero-grid {
@@ -128,40 +131,42 @@
       gap: 40px;
       align-items: center;
       width: 100%;
-      max-width: var(--max-width)
+      max-width: var(--max-width);
     }
 
     .card {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.02),
+          rgba(255, 255, 255, 0.01));
       border: 1px solid var(--glass-border);
       padding: 28px;
       border-radius: 14px;
-      box-shadow: 0 10px 40px rgba(2, 6, 23, 0.6)
+      box-shadow: 0 10px 40px rgba(2, 6, 23, 0.6);
     }
 
     .intro h1 {
       font-size: 36px;
       margin: 0 0 8px;
-      line-height: 1.02
+      line-height: 1.02;
     }
 
     .intro h1 .name {
       background: linear-gradient(90deg, var(--accent), #06b6d4);
       -webkit-background-clip: text;
       background-clip: text;
-      color: transparent
+      color: transparent;
     }
 
     .intro p {
       color: var(--muted);
       margin: 12px 0 18px;
-      font-size: 15px
+      font-size: 15px;
     }
 
     .meta {
       display: flex;
       gap: 12px;
-      flex-wrap: wrap
+      flex-wrap: wrap;
     }
 
     .badge {
@@ -173,13 +178,13 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      border: 1px solid rgba(255, 255, 255, 0.02)
+      border: 1px solid rgba(255, 255, 255, 0.02);
     }
 
     .hero-actions {
       display: flex;
       gap: 12px;
-      margin-top: 18px
+      margin-top: 18px;
     }
 
     .btn-outline {
@@ -189,7 +194,7 @@
       background: transparent;
       color: #fff;
       text-decoration: none;
-      font-weight: 600
+      font-weight: 600;
     }
 
     /* Profile card */
@@ -198,7 +203,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      gap: 12px
+      gap: 12px;
     }
 
     .avatar {
@@ -208,14 +213,14 @@
       background: linear-gradient(135deg, #0b1220, rgba(255, 255, 255, 0.02));
       display: grid;
       place-items: center;
-      border: 1px solid rgba(255, 255, 255, 0.04)
+      border: 1px solid rgba(255, 255, 255, 0.04);
     }
 
     .avatar img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 14px
+      border-radius: 14px;
     }
 
     .location {
@@ -223,12 +228,12 @@
       color: var(--muted);
       display: flex;
       gap: 8px;
-      align-items: center
+      align-items: center;
     }
 
     /* SECTIONS */
     section {
-      padding: 70px 24px
+      padding: 70px 24px;
     }
 
     .section-title {
@@ -237,17 +242,17 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px
+      gap: 20px;
     }
 
     .section-title h2 {
       margin: 0;
-      font-size: 20px
+      font-size: 20px;
     }
 
     .section-sub {
       color: var(--muted);
-      font-size: 14px
+      font-size: 14px;
     }
 
     /* ABOUT */
@@ -257,30 +262,30 @@
       display: grid;
       grid-template-columns: 1fr 380px;
       gap: 30px;
-      align-items: start
+      align-items: start;
     }
 
     .about-text h3 {
       margin: 0;
-      font-size: 18px
+      font-size: 18px;
     }
 
     .about-text p {
       color: var(--muted);
-      line-height: 1.6
+      line-height: 1.6;
     }
 
     .skill-list {
       display: flex;
       flex-direction: column;
       gap: 12px;
-      margin-top: 16px
+      margin-top: 16px;
     }
 
     .skill {
       display: flex;
       justify-content: space-between;
-      align-items: center
+      align-items: center;
     }
 
     .skill .bar {
@@ -289,14 +294,14 @@
       border-radius: 8px;
       flex: 1;
       margin-left: 14px;
-      overflow: hidden
+      overflow: hidden;
     }
 
     .skill .bar>i {
       display: block;
       height: 100%;
       background: linear-gradient(90deg, var(--accent), #06b6d4);
-      width: 0%
+      width: 0%;
     }
 
     /* PROJECTS */
@@ -305,32 +310,34 @@
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 18px;
       max-width: var(--max-width);
-      margin: 0 auto
+      margin: 0 auto;
     }
 
     .project {
       padding: 16px;
       border-radius: 12px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.02),
+          rgba(255, 255, 255, 0.01));
       border: 1px solid rgba(255, 255, 255, 0.03);
       position: relative;
-      overflow: hidden
+      overflow: hidden;
     }
 
     .project h4 {
-      margin: 0 0 8px
+      margin: 0 0 8px;
     }
 
     .project p {
       color: var(--muted);
       font-size: 14px;
-      margin-bottom: 12px
+      margin-bottom: 12px;
     }
 
     .project .tags {
       display: flex;
       gap: 8px;
-      flex-wrap: wrap
+      flex-wrap: wrap;
     }
 
     .tag {
@@ -338,47 +345,47 @@
       padding: 6px 8px;
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.02);
-      color: var(--muted)
+      color: var(--muted);
     }
 
     .project .links {
       display: flex;
       gap: 8px;
-      margin-top: 12px
+      margin-top: 12px;
     }
 
     .link-btn {
       padding: 8px 10px;
       border-radius: 8px;
       text-decoration: none;
-      border: 1px solid rgba(255, 255, 255, 0.03)
+      border: 1px solid rgba(255, 255, 255, 0.03);
     }
 
     /* STUDIES + MAP */
     .study-card {
       display: flex;
       gap: 14px;
-      align-items: center
+      align-items: center;
     }
 
     .study-card img {
       width: 72px;
       height: 72px;
       border-radius: 10px;
-      object-fit: cover
+      object-fit: cover;
     }
 
     .map-wrap {
       margin-top: 14px;
       border-radius: 12px;
       overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.03)
+      border: 1px solid rgba(255, 255, 255, 0.03);
     }
 
     iframe {
       width: 100%;
       height: 320px;
-      border: 0
+      border: 0;
     }
 
     /* CONTACT */
@@ -387,13 +394,13 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 380px;
-      gap: 20px
+      gap: 20px;
     }
 
     .contact-form {
       display: flex;
       flex-direction: column;
-      gap: 12px
+      gap: 12px;
     }
 
     input,
@@ -402,7 +409,7 @@
       border: 1px solid rgba(255, 255, 255, 0.04);
       padding: 12px;
       border-radius: 10px;
-      color: #e6eef8
+      color: #e6eef8;
     }
 
     .submit {
@@ -412,33 +419,33 @@
       border-radius: 10px;
       color: #04111a;
       font-weight: 700;
-      cursor: pointer
+      cursor: pointer;
     }
 
     footer {
       padding: 28px 24px;
       text-align: center;
       color: var(--muted);
-      font-size: 13px
+      font-size: 13px;
     }
 
     /* RESPONSIVE */
-    @media (max-width:980px) {
+    @media (max-width: 980px) {
       .hero-grid {
         grid-template-columns: 1fr;
-        align-items: center
+        align-items: center;
       }
 
       .about-grid {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
       }
 
       .contact-grid {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
       }
 
       nav ul {
-        display: none
+        display: none;
       }
     }
   </style>
@@ -450,9 +457,9 @@
       <div class="brand">
         <div class="logo-dot" aria-hidden></div>
         <div>
-          <div style="font-size:14px">Niveth J Unnithan</div>
-          <div style="font-size:11px;color:var(--muted);margin-top:2px">Full Stack Developer · AI & Digital Farming
-            Student
+          <div style="font-size: 14px">Niveth J Unnithan</div>
+          <div style="font-size: 11px; color: var(--muted); margin-top: 2px">
+            Full Stack Developer · AI & Digital Farming Student
           </div>
         </div>
       </div>
@@ -467,7 +474,7 @@
       </nav>
       <a class="cta"
         href="https://raw.githubusercontent.com/nivethjunnithan/nivethjunnithan.github.io/main/docs/Niveth_Jayachandran_Unnithan_Resume_StudentDeveloper.pdf"
-        target="_blank">Resume <i class='bx bx-download'></i></a>
+        target="_blank">Resume <i class="bx bx-download"></i></a>
     </div>
   </header>
 
@@ -481,8 +488,11 @@
             <div class="badge">Open to remote roles</div>
           </div>
           <h1>Hello, I’m <span class="name">Niveth J Unnithan</span></h1>
-          <p>Full Stack Developer focused on React.js + Spring Boot, currently pursuing an MSc in Digital Farming & AI.
-            I build scalable web applications and ML-powered solutions for agriculture & beyond.</p>
+          <p>
+            Full Stack Developer focused on React.js + Spring Boot, currently
+            pursuing an MSc in Digital Farming & AI. I build scalable web
+            applications and ML-powered solutions for agriculture & beyond.
+          </p>
 
           <div class="hero-actions">
             <a class="cta" href="#projects">View Projects</a>
@@ -490,27 +500,33 @@
             <a class="btn-outline" href="https://github.com/nivethjunnithan" target="_blank">GitHub</a>
           </div>
 
-          <div style="margin-top:18px;color:var(--muted);font-size:13px">I like solving problems with clean code,
-            pragmatic cloud solutions, and a touch of AI.</div>
+          <div style="margin-top: 18px; color: var(--muted); font-size: 13px">
+            I like solving problems with clean code, pragmatic cloud
+            solutions, and a touch of AI.
+          </div>
         </div>
 
         <aside class="card profile">
           <div class="avatar">
             <!-- replace src with real photo if available -->
-            <img src="img/about.jpeg" alt="Niveth Avatar">
+            <img src="img/about.jpeg" alt="Niveth Avatar" />
           </div>
-          <div style="font-weight:700">Niveth J Unnithan</div>
-          <div style="color:var(--muted);font-size:14px">Full Stack Developer · MSc Digital Farming & AI Student</div>
-          <div class="location"><i class='bx bxs-map'></i> Freising, Bavaria, Germany</div>
-          <div style="display:flex;gap:10px;margin-top:8px">
+          <div style="font-weight: 700">Niveth J Unnithan</div>
+          <div style="color: var(--muted); font-size: 14px">
+            Full Stack Developer · MSc Digital Farming & AI Student
+          </div>
+          <div class="location">
+            <i class="bx bxs-map"></i> Freising, Bavaria, Germany
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: 8px">
             <a href="tel:+491627655052" class="badge">+49 162 7655052</a>
             <a href="mailto:nivethunnithan@gmail.com" class="badge">nivethunnithan@gmail.com</a>
           </div>
-          <div style="display:flex;gap:10px;margin-top:12px">
-            <a href="https://github.com/nivethjunnithan" class="link-btn" target="_blank"><i class='bx bxl-github'></i>
+          <div style="display: flex; gap: 10px; margin-top: 12px">
+            <a href="https://github.com/nivethjunnithan" class="link-btn" target="_blank"><i class="bx bxl-github"></i>
               GitHub</a>
             <a href="https://www.linkedin.com/in/nivethjunnithan/" class="link-btn" target="_blank"><i
-                class='bx bxl-linkedin'></i> LinkedIn</a>
+                class="bx bxl-linkedin"></i> LinkedIn</a>
           </div>
         </aside>
       </div>
@@ -519,48 +535,66 @@
     <section id="about">
       <div class="section-title">
         <h2>About Me</h2>
-        <div class="section-sub">Developer • AI Enthusiast • Digital Farming Student</div>
+        <div class="section-sub">
+          Developer • AI Enthusiast • Digital Farming Student
+        </div>
       </div>
 
       <div class="about-grid">
         <div class="card about-text">
           <h3>Who I am</h3>
-          <div class="card" style="max-width:var(--max-width);margin:0 auto;">
+          <div class="card" style="max-width: var(--max-width); margin: 0 auto">
             <p>
-              I'm a pragmatic full-stack developer with 4+ years of experience building web applications using React.js
-              and Spring Boot.
-              I previously worked at TCS and have built production-grade features for enterprise and consumer
-              applications.
-              Currently expanding my expertise into Digital Farming & Smart Agriculture, leveraging AI, IoT, and Data
-              Science
-              to build sustainable tech-driven solutions for agriculture.
-              My current focus is at the intersection of AI and agriculture — applying machine learning and cloud-native
-              architectures
-              to solve real farming problems.
+              I'm a pragmatic full-stack developer with 4+ years of experience
+              building web applications using React.js and Spring Boot. I
+              previously worked at TCS and have built production-grade
+              features for enterprise and consumer applications. Currently
+              expanding my expertise into Digital Farming & Smart Agriculture,
+              leveraging AI, IoT, and Data Science to build sustainable
+              tech-driven solutions for agriculture. My current focus is at
+              the intersection of AI and agriculture — applying machine
+              learning and cloud-native architectures to solve real farming
+              problems.
             </p>
           </div>
-          <h3 style="margin-top:14px">Highlights</h3>
-          <ul style="color:var(--muted);line-height:1.8">
-            <li>Expertise in React.js, modern JavaScript (ES6+), and component-driven UI.</li>
-            <li>Backend experience with Spring Boot, REST API design, and databases (MySQL, PostgreSQL, H2).</li>
-            <li>Familiar with Azure services, Docker, and Git-based workflows.</li>
-            <li>Built ML-powered Image Classifier for plant disease detection and integrated it into web apps.</li>
+          <h3 style="margin-top: 14px">Highlights</h3>
+          <ul style="color: var(--muted); line-height: 1.8">
+            <li>
+              Expertise in React.js, modern JavaScript (ES6+), and
+              component-driven UI.
+            </li>
+            <li>
+              Backend experience with Spring Boot, REST API design, and
+              databases (MySQL, PostgreSQL, H2).
+            </li>
+            <li>
+              Familiar with Azure services, Docker, and Git-based workflows.
+            </li>
+            <li>
+              Built ML-powered Image Classifier for plant disease detection
+              and integrated it into web apps.
+            </li>
           </ul>
 
           <div class="skill-list">
-            <div class="skill"><strong>React.js</strong>
+            <div class="skill">
+              <strong>React.js</strong>
               <div class="bar" data-value="95"><i></i></div>
             </div>
-            <div class="skill"><strong>Spring Boot</strong>
+            <div class="skill">
+              <strong>Spring Boot</strong>
               <div class="bar" data-value="88"><i></i></div>
             </div>
-            <div class="skill"><strong>JavaScript / Node</strong>
+            <div class="skill">
+              <strong>JavaScript / Node</strong>
               <div class="bar" data-value="85"><i></i></div>
             </div>
-            <div class="skill"><strong>Azure & DevOps</strong>
+            <div class="skill">
+              <strong>Azure & DevOps</strong>
               <div class="bar" data-value="70"><i></i></div>
             </div>
-            <div class="skill"><strong>AI / Image Processing</strong>
+            <div class="skill">
+              <strong>AI / Image Processing</strong>
               <div class="bar" data-value="72"><i></i></div>
             </div>
           </div>
@@ -568,80 +602,125 @@
 
         <aside class="card">
           <h4>Quick Facts</h4>
-          <ul style="color:var(--muted);line-height:1.8;padding-left:20px;margin:8px 0;">
+          <ul style="
+                color: var(--muted);
+                line-height: 1.8;
+                padding-left: 20px;
+                margin: 8px 0;
+              ">
             <li>Currently based in Freising, Germany 🇩🇪</li>
-            <li>Pursuing MSc in Digital Farming & AI at Hochschule Weihenstephan-Triesdorf</li>
-            <li>4+ years of professional experience in Full Stack Development (React.js & Spring Boot)</li>
+            <li>
+              Pursuing MSc in Digital Farming & AI at Hochschule
+              Weihenstephan-Triesdorf
+            </li>
+            <li>
+              4+ years of professional experience in Full Stack Development
+              (React.js & Spring Boot)
+            </li>
             <li>Ex-TCS Software Engineer</li>
             <li>Open to collaborations and remote opportunities</li>
           </ul>
 
-          <h4 style="margin-top:12px">Certifications</h4>
-          <ul style="color:var(--muted);line-height:1.8;padding-left:20px;margin:8px 0;">
+          <h4 style="margin-top: 12px">Certifications</h4>
+          <ul style="
+                color: var(--muted);
+                line-height: 1.8;
+                padding-left: 20px;
+                margin: 8px 0;
+              ">
             <li>Machine Learning Specialisation</li>
             <li>Microsoft Azure Fundamentals</li>
             <li>Azure AI Fundamentals</li>
             <li>Cloud Computing Basics</li>
           </ul>
 
-          <h4 style="margin-top:12px">Personal</h4>
-          <p style="color:var(--muted);margin-top:6px">A creative and logical problem-solver who enjoys building
-            scalable tech solutions, exploring AI applications in agriculture, and constantly learning emerging
-            technologies. Passionate about sustainable innovation, nature, and digital transformation.</p>
+          <h4 style="margin-top: 12px">Personal</h4>
+          <p style="color: var(--muted); margin-top: 6px">
+            A creative and logical problem-solver who enjoys building scalable
+            tech solutions, exploring AI applications in agriculture, and
+            constantly learning emerging technologies. Passionate about
+            sustainable innovation, nature, and digital transformation.
+          </p>
         </aside>
-
       </div>
     </section>
 
     <section id="projects">
       <div class="section-title">
         <h2>Selected Projects</h2>
-        <div class="section-sub">A curated selection of work showcasing full-stack & AI skills</div>
+        <div class="section-sub">
+          A curated selection of work showcasing full-stack & AI skills
+        </div>
       </div>
 
       <div class="projects-grid">
         <article class="project card">
           <h4>US Bank Modernization</h4>
-          <p>Contributed to modernization of the SinglePoint application using React.js, SCSS and Spring Boot; focused
-            on componentization and performance improvements.</p>
-          <div class="tags"><span class="tag">React</span><span class="tag">Spring Boot</span><span
-              class="tag">SCSS</span></div>
-          <div class="links"><a class="link-btn" href="https://www.usbank.com/index.html" target="_blank">Live</a></div>
+          <p>
+            Contributed to modernization of the SinglePoint application using
+            React.js, SCSS and Spring Boot; focused on componentization and
+            performance improvements.
+          </p>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">Spring Boot</span><span class="tag">SCSS</span>
+          </div>
+          <div class="links">
+            <a class="link-btn" href="https://www.usbank.com/index.html" target="_blank">Live</a>
+          </div>
         </article>
 
         <article class="project card">
           <h4>Image Classifier WebApp</h4>
-          <p>Web application that uses a CNN model to detect diseases in plant leaves. Flask backend serves predictions
-            to a React frontend.</p>
-          <div class="tags"><span class="tag">Flask</span><span class="tag">CNN</span><span class="tag">Python</span>
+          <p>
+            Web application that uses a CNN model to detect diseases in plant
+            leaves. Flask backend serves predictions to a React frontend.
+          </p>
+          <div class="tags">
+            <span class="tag">Flask</span><span class="tag">CNN</span><span class="tag">Python</span>
           </div>
-          <div class="links"><a class="link-btn"
-              href="https://github.com/nivethjunnithan/image-classifier-webapp-flask.git" target="_blank">GitHub</a>
+          <div class="links">
+            <a class="link-btn" href="https://github.com/nivethjunnithan/image-classifier-webapp-flask.git"
+              target="_blank">GitHub</a>
           </div>
         </article>
 
         <article class="project card">
           <h4>Class App</h4>
-          <p>Student administration app with attendance, timetable, marks and admin features. Built with a React
-            frontend and REST backend.</p>
-          <div class="tags"><span class="tag">React</span><span class="tag">REST</span></div>
-          <div class="links"><a class="link-btn" href="https://github.com/nivethjunnithan/ClassApp.git"
-              target="_blank">GitHub</a></div>
+          <p>
+            Student administration app with attendance, timetable, marks and
+            admin features. Built with a React frontend and REST backend.
+          </p>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">REST</span>
+          </div>
+          <div class="links">
+            <a class="link-btn" href="https://github.com/nivethjunnithan/ClassApp.git" target="_blank">GitHub</a>
+          </div>
         </article>
 
         <article class="project card">
           <h4>Flutter + Flask Login</h4>
-          <p>Mobile app with secure login and registration built in Flutter and Flask for backend authentication.</p>
-          <div class="tags"><span class="tag">Flutter</span><span class="tag">Flask</span></div>
-          <div class="links"><a class="link-btn" href="https://github.com/nivethjunnithan/Flutter-flask-login.git"
-              target="_blank">GitHub</a></div>
+          <p>
+            Mobile app with secure login and registration built in Flutter and
+            Flask for backend authentication.
+          </p>
+          <div class="tags">
+            <span class="tag">Flutter</span><span class="tag">Flask</span>
+          </div>
+          <div class="links">
+            <a class="link-btn" href="https://github.com/nivethjunnithan/Flutter-flask-login.git"
+              target="_blank">GitHub</a>
+          </div>
         </article>
 
         <article class="project card">
           <h4>RAG (Retrieval-Augmented Generation) From Scratch</h4>
-          <p>Implemented a step-by-step RAG system using LLMs to fetch relevant documents for context-aware responses.
-            Covered document indexing, retrieval mechanisms, and integration with generative models for accurate,
-            up-to-date outputs.</p>
+          <p>
+            Implemented a step-by-step RAG system using LLMs to fetch relevant
+            documents for context-aware responses. Covered document indexing,
+            retrieval mechanisms, and integration with generative models for
+            accurate, up-to-date outputs.
+          </p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">LLM</span>
@@ -655,8 +734,11 @@
 
         <article class="project card">
           <h4>Custom Hooks in React</h4>
-          <p>Created reusable and efficient custom hooks to simplify state management and side effects in React
-            applications. Focused on modularity and code reusability across projects.</p>
+          <p>
+            Created reusable and efficient custom hooks to simplify state
+            management and side effects in React applications. Focused on
+            modularity and code reusability across projects.
+          </p>
           <div class="tags">
             <span class="tag">React</span>
             <span class="tag">JavaScript</span>
@@ -669,11 +751,16 @@
 
         <article class="project card">
           <h4>Android Kernel Development</h4>
-          <p>Ported Linux 3.x kernel components for Snapdragon 625 (msm8953), contributing to performance and stability
-            enhancements.</p>
-          <div class="tags"><span class="tag">Linux</span><span class="tag">Kernel</span></div>
-          <div class="links"><a class="link-btn"
-              href="https://github.com/nivethjunnithan/android_kernel_xiaomi_msm8953.git" target="_blank">GitHub</a>
+          <p>
+            Ported Linux 3.x kernel components for Snapdragon 625 (msm8953),
+            contributing to performance and stability enhancements.
+          </p>
+          <div class="tags">
+            <span class="tag">Linux</span><span class="tag">Kernel</span>
+          </div>
+          <div class="links">
+            <a class="link-btn" href="https://github.com/nivethjunnithan/android_kernel_xiaomi_msm8953.git"
+              target="_blank">GitHub</a>
           </div>
         </article>
       </div>
@@ -682,45 +769,73 @@
     <section id="study">
       <div class="section-title">
         <h2>Current Studies</h2>
-        <div class="section-sub">MSc in Digital Farming & AI — Hochschule Weihenstephan-Triesdorf</div>
+        <div class="section-sub">
+          MSc in Digital Farming & AI — Hochschule Weihenstephan-Triesdorf
+        </div>
       </div>
 
-      <div
-        style="max-width:var(--max-width);margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:20px;align-items:start">
+      <div style="
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 20px;
+            align-items: start;
+          ">
         <div class="card">
-          <h3 style="margin-top:0">About the Program</h3>
-          <p style="color:var(--muted)">The Master's program in Digital Farming systematically prepares students to meet
-            the challenges of smart agriculture. It blends agricultural sciences with technology, AI, robotics, and
-            digitalisation — aiming to enhance sustainability, optimize resources, and improve animal welfare while
-            managing the high workloads of modern farming. The program also provides international exposure and
-            intercultural competence, preparing students for global agricultural innovation.</p>
+          <h3 style="margin-top: 0">About the Program</h3>
+          <p style="color: var(--muted)">
+            The Master's program in Digital Farming systematically prepares
+            students to meet the challenges of smart agriculture. It blends
+            agricultural sciences with technology, AI, robotics, and
+            digitalisation — aiming to enhance sustainability, optimize
+            resources, and improve animal welfare while managing the high
+            workloads of modern farming. The program also provides
+            international exposure and intercultural competence, preparing
+            students for global agricultural innovation.
+          </p>
 
-          <h4 style="margin-top:12px">How it connects with my work</h4>
-          <ul style="color:var(--muted);line-height:1.8">
-            <li>Applying ML models (image classification) to detect plant diseases and enhance crop health monitoring.
+          <h4 style="margin-top: 12px">How it connects with my work</h4>
+          <ul style="color: var(--muted); line-height: 1.8">
+            <li>
+              Applying ML models (image classification) to detect plant
+              diseases and enhance crop health monitoring.
             </li>
-            <li>Leveraging IoT and data analytics to improve resource efficiency and enable smart agriculture systems.
+            <li>
+              Leveraging IoT and data analytics to improve resource efficiency
+              and enable smart agriculture systems.
             </li>
-            <li>Building full-stack pipelines to collect, process, and visualize agricultural and environmental data.
+            <li>
+              Building full-stack pipelines to collect, process, and visualize
+              agricultural and environmental data.
             </li>
-            <li>Exploring robotics and AI-driven automation to improve precision farming.</li>
-            <li>Developing scalable, cloud-deployed solutions for sustainable agriculture.</li>
+            <li>
+              Exploring robotics and AI-driven automation to improve precision
+              farming.
+            </li>
+            <li>
+              Developing scalable, cloud-deployed solutions for sustainable
+              agriculture.
+            </li>
           </ul>
         </div>
         <aside class="card">
           <div class="study-card">
-            <img src="img/logo.png" alt="HSWT Logo">
+            <img src="img/logo.png" alt="HSWT Logo" />
             <div>
-              <div style="font-weight:700">Hochschule Weihenstephan-Triesdorf</div>
-              <div style="color:var(--muted);font-size:13px;margin-top:6px">MSc Digital Farming & AI — Started Oct 1,
-                2025</div>
+              <div style="font-weight: 700">
+                Hochschule Weihenstephan-Triesdorf
+              </div>
+              <div style="color: var(--muted); font-size: 13px; margin-top: 6px">
+                MSc Digital Farming & AI — Started Oct 1, 2025
+              </div>
             </div>
           </div>
           <div class="map-wrap">
             <!-- HSWT Freising campus exact location in satellite view -->
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.98988504437!2d11.728207!3d48.3956121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e6b193a6ddb95%3A0x6008a7d0683a299f!2sHochschule%20Weihenstephan-Triesdorf!5e0!3m2!1sen!2sus!4v1697040000000&t=k"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+              width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy">
             </iframe>
           </div>
         </aside>
@@ -740,25 +855,37 @@
           <input type="text" id="subject" placeholder="Subject" />
           <textarea id="message" rows="6" placeholder="How can I help you?"></textarea>
           <button class="submit" id="send">Send Message</button>
-          <div id="note" style="color:var(--muted);font-size:13px;margin-top:6px">Prefer email? <a
-              href="mailto:nivethunnithan@gmail.com">nivethunnithan@gmail.com</a></div>
+          <div id="note" style="color: var(--muted); font-size: 13px; margin-top: 6px">
+            Prefer email?
+            <a href="mailto:nivethunnithan@gmail.com">nivethunnithan@gmail.com</a>
+          </div>
         </div>
 
         <aside class="card">
           <h4>Get in touch</h4>
-          <p style="color:var(--muted)">I'm open to freelance, collaboration, and full-time opportunities. Based in
-            Freising — willing to relocate within Germany or work remotely.</p>
+          <p style="color: var(--muted)">
+            I'm open to freelance, collaboration, and full-time opportunities.
+            Based in Freising — willing to relocate within Germany or work
+            remotely.
+          </p>
 
-          <div style="margin-top:12px;display:flex;flex-direction:column;gap:8px">
-            <div style="color:var(--muted)"><strong>Email</strong><br /><a
-                href="mailto:nivethunnithan@gmail.com">nivethunnithan@gmail.com</a></div>
-            <div style="color:var(--muted)"><strong>Phone</strong><br /><a href="tel:+491627655052">+49 162 7655052</a>
+          <div style="
+                margin-top: 12px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+              ">
+            <div style="color: var(--muted)">
+              <strong>Email</strong><br /><a href="mailto:nivethunnithan@gmail.com">nivethunnithan@gmail.com</a>
             </div>
-            <div style="display:flex;gap:10px;margin-top:8px">
+            <div style="color: var(--muted)">
+              <strong>Phone</strong><br /><a href="tel:+491627655052">+49 162 7655052</a>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 8px">
               <a href="https://github.com/nivethjunnithan" target="_blank" class="link-btn"><i
-                  class='bx bxl-github'></i></a>
+                  class="bx bxl-github"></i></a>
               <a href="https://www.linkedin.com/in/nivethjunnithan/" target="_blank" class="link-btn"><i
-                  class='bx bxl-linkedin'></i></a>
+                  class="bx bxl-linkedin"></i></a>
             </div>
           </div>
         </aside>
@@ -767,33 +894,40 @@
   </main>
 
   <footer>
-    <div style="max-width:var(--max-width);margin:0 auto;padding:6px 12px">Designed & maintained by Niveth • © <span
-        id="yr"></span></div>
+    <div style="max-width: var(--max-width); margin: 0 auto; padding: 6px 12px">
+      Designed & maintained by Niveth • © <span id="yr"></span>
+    </div>
   </footer>
 
   <script>
     // Year
-    document.getElementById('yr').textContent = new Date().getFullYear();
+    document.getElementById("yr").textContent = new Date().getFullYear();
 
     // Animate skill bars
-    document.querySelectorAll('.skill .bar').forEach(bar => {
-      const val = bar.getAttribute('data-value') || 60;
-      const inner = bar.querySelector('i');
-      setTimeout(() => { inner.style.width = val + '%'; }, 200);
+    document.querySelectorAll(".skill .bar").forEach((bar) => {
+      const val = bar.getAttribute("data-value") || 60;
+      const inner = bar.querySelector("i");
+      setTimeout(() => {
+        inner.style.width = val + "%";
+      }, 200);
     });
 
     // Simple contact form handler (client-only)
-    document.getElementById('send').addEventListener('click', () => {
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
+    document.getElementById("send").addEventListener("click", () => {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
       if (!name || !email || !message) {
-        alert('Please fill name, email and message.');
+        alert("Please fill name, email and message.");
         return;
       }
       // create mailto link
-      const subject = encodeURIComponent(document.getElementById('subject').value || 'Website contact');
-      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      const subject = encodeURIComponent(
+        document.getElementById("subject").value || "Website contact"
+      );
+      const body = encodeURIComponent(
+        "Name: " + name + "\nEmail: " + email + "\n\n" + message
+      );
       window.location.href = `mailto:nivethunnithan@gmail.com?subject=${subject}&body=${body}`;
     });
   </script>
