@@ -1,6 +1,6 @@
 <!-- Header with Banner Image -->
 <div>
-  <img src="background.jpg" alt="Hi there!" /><br>
+  <img src="/img/background.jpg" alt="Hi there!" /><br>
 </div>
 
 #### About Me:
